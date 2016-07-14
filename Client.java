@@ -80,7 +80,23 @@ class Client extends Munhoz_Engine {
                chat.k_count.remove(y);
             }
          }
+
+
       }
+
+      if(keyboard.keys.contains(8)){
+         if(!chat.k_count.contains(8)&&next_message.length()>0){
+            chat.next_message = chat.next_message.substring(0,chat.next_message.length()-1);
+            chat.k_count.add(8);
+         }
+      }
+      else{
+         int y = chat.k_count.indexOf(8);
+         if(y!=-1){
+            chat.k_count.remove(y);
+         }
+      }
+
 
       if(keyboard.keys.size()>0){
          if(keyboard.keys.get(keyboard.keys.size()-1)=='\n'){
