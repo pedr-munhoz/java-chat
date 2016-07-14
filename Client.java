@@ -155,6 +155,7 @@ class Client extends Munhoz_Engine {
             chat.k_count.remove(y);
          }
       }
+      g.drawString("    "+chat.next_message,0,550);
    }
 
    public static void main(String args[]){

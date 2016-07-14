@@ -30,21 +30,21 @@ public class Server extends BaseTutorial{
          clientInput = clientString.readLine();//Le uma linha do clienteInput
          if(clientInput.length()>5){
             if(!(clientInput.substring(0,5).equals("40404"))){
-               chat.messages.add(clientInput);
+               chat.messages.add("1:" + clientInput);
             }
          }
          else{
-            chat.messages.add(clientInput);;
+            chat.messages.add("1:" + clientInput);;
          }
 
          clientInput = clientString2.readLine();//Le uma linha do clienteInput
          if(clientInput.length()>5){
             if(!(clientInput.substring(0,5).equals("40404"))){
-               chat.messages.add(clientInput);
+               chat.messages.add("2:" + clientInput);
             }
          }
          else{
-            chat.messages.add(clientInput);;
+            chat.messages.add("2:" + clientInput);;
          }
 
          aux = chat.messages.size()- 20;
