@@ -85,7 +85,7 @@ class Client extends Munhoz_Engine {
       }
 
       if(keyboard.keys.contains(8)){
-         if(!chat.k_count.contains(8)&&next_message.length()>0){
+         if(!chat.k_count.contains(8)&&chat.next_message.length()>0){
             chat.next_message = chat.next_message.substring(0,chat.next_message.length()-1);
             chat.k_count.add(8);
          }
